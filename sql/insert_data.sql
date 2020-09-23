@@ -1,0 +1,1 @@
+insert into common.members (id, name) values (1, "test");

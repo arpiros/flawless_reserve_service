@@ -1,12 +1,15 @@
 package sys
 
 import (
+	"flawless_reserve_service/flawless_reserve_service/dao"
+
 	"github.com/labstack/echo/v4"
 	"github.com/spf13/viper"
 )
 
 func SystemInit() {
 	InitConfig("./config")
+	dao.SetDriver()
 }
 
 func StartEchoFramework() {
