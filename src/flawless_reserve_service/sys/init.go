@@ -6,7 +6,7 @@ import (
 )
 
 func SystemInit() {
-	InitConfig()
+	InitConfig("./config")
 }
 
 func StartEchoFramework() {
@@ -21,10 +21,10 @@ func StartEchoFramework() {
 	}
 }
 
-func InitConfig() {
+func InitConfig(path string) {
 	viper.SetConfigName("config")
 	viper.SetConfigType("yaml")
-	viper.AddConfigPath("./configs")
+	viper.AddConfigPath(path)
 
 	if err := viper.ReadInConfig(); err != nil {
 		panic(err.Error())
