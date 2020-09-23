@@ -1,7 +1,7 @@
 package dao
 
 import (
-	"flawless_reserve_service/flawless_reserve_service/drivers"
+	"reserve_service/drivers"
 
 	"gorm.io/gorm"
 )

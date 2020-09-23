@@ -1,7 +1,7 @@
 package drivers_test
 
 import (
-	"flawless_reserve_service/flawless_reserve_service/drivers"
+	"reserve_service/drivers"
 	"testing"
 )
 

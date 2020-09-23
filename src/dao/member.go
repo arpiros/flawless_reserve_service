@@ -1,7 +1,7 @@
 package dao
 
 import (
-	"flawless_reserve_service/flawless_reserve_service/models"
+	"reserve_service/models"
 )
 
 func GetMember(mId int) *models.Member {

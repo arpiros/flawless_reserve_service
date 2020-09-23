@@ -1,7 +1,7 @@
 package dao_test
 
 import (
-	"flawless_reserve_service/flawless_reserve_service/dao"
+	"reserve_service/dao"
 	"testing"
 
 	"github.com/stretchr/testify/assert"

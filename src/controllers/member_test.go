@@ -1,7 +1,7 @@
 package controllers_test
 
 import (
-	"flawless_reserve_service/flawless_reserve_service/controllers"
+	"reserve_service/controllers"
 	"testing"
 
 	"github.com/stretchr/testify/assert"

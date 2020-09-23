@@ -1,7 +1,7 @@
 package sys
 
 import (
-	"flawless_reserve_service/flawless_reserve_service/controllers"
+	"reserve_service/controllers"
 
 	"github.com/labstack/echo/v4"
 )
