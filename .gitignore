@@ -15,3 +15,7 @@
 # vendor/
 
 .vscode
+.idea
+
+pkg
+.DS_Store
