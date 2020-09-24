@@ -8,7 +8,7 @@ import (
 )
 
 func SystemInit() {
-	InitConfig("./config")
+	InitConfig("./configs")
 	dao.SetDriver()
 }
 
