@@ -10,6 +10,7 @@ var commonDb *gorm.DB
 
 func SetDriver() {
 	commonDb = drivers.InitDb()
+	Migration()
 }
 
 func GetCommonDb() *gorm.DB {
