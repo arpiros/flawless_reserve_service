@@ -1,8 +1,8 @@
 package drivers_test
 
 import (
-	"reserve_service/sys"
 	"os"
+	"reserve_service/sys"
 	"testing"
 )
 

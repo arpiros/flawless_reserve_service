@@ -16,7 +16,9 @@ func SystemInit() {
 func StartEchoFramework() {
 	e := echo.New()
 	e.File("/", "public/index.html")
+
 	e.Validator = middleware.NewValidator()
+	SetMiddleWare(e)
 	SetRouter(e)
 
 	if viper.GetBool("use_tls") {
