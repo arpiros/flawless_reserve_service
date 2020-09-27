@@ -21,11 +21,11 @@ var (
 	reset = string([]byte{27, 91, 48, 109})
 )
 
-func NewRecover() echo.MiddlewareFunc {
-	return OverrideRecover()
+func HttpRecover() echo.MiddlewareFunc {
+	return httpRecover()
 }
 
-func OverrideRecover() echo.MiddlewareFunc {
+func httpRecover() echo.MiddlewareFunc {
 	logger := log.New(os.Stdout, "\n\n\x1b[31m", log.LstdFlags)
 
 	return func(next echo.HandlerFunc) echo.HandlerFunc {
