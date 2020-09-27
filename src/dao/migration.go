@@ -3,7 +3,10 @@ package dao
 import "reserve_service/models"
 
 func Migration() {
-	commonDb.AutoMigrate(
+	err := commonDb.AutoMigrate(
 		&models.Member{},
 	)
+	if err != nil {
+		panic("Failure Auto Migrate")
+	}
 }
