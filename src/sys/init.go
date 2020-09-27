@@ -21,11 +21,7 @@ func StartEchoFramework() {
 	middleware.SetMiddleWare(e)
 	SetRouter(e)
 
-	if viper.GetBool("use_tls") {
-		e.Logger.Fatal(e.Start(viper.GetString("https_port")))
-	} else {
-		e.Logger.Fatal(e.Start(viper.GetString("http_port")))
-	}
+	e.Logger.Fatal(e.Start(viper.GetString("http_port")))
 }
 
 func InitConfig(path string) {

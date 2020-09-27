@@ -1,8 +1,6 @@
 debug_mode: true
-use_tls: false
 
 http_port: ":80"
-https_port: ":443"
 
 common_db: "docker:docker@tcp(127.0.0.1:3306)/common?charset=utf8&parseTime=True&loc=Local"
 
