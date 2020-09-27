@@ -2,6 +2,7 @@ package sys
 
 import (
 	"reserve_service/dao"
+	"reserve_service/middleware"
 
 	"github.com/labstack/echo/v4"
 	"github.com/spf13/viper"
@@ -15,6 +16,7 @@ func SystemInit() {
 func StartEchoFramework() {
 	e := echo.New()
 	e.File("/", "public/index.html")
+	e.Validator = middleware.NewValidator()
 	SetRouter(e)
 
 	if viper.GetBool("use_tls") {
