@@ -12,5 +12,5 @@ func TestMain(m *testing.M) {
 	println(path)
 	sys.InitConfig("../configs")
 	dao.SetDriver()
-	m.Run()
+	os.Exit(m.Run())
 }

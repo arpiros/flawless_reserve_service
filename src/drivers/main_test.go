@@ -10,5 +10,5 @@ func TestMain(m *testing.M) {
 	path, _ := os.Getwd()
 	println(path)
 	sys.InitConfig("../configs")
-	m.Run()
+	os.Exit(m.Run())
 }
