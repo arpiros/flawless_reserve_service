@@ -7,6 +7,6 @@ import (
 
 func NewLogger() echo.MiddlewareFunc {
 	return md.LoggerWithConfig(md.LoggerConfig{
-		Format: "method=${method}, uri=${uri}, status=${status}\n",
+		Format: "[${method}:${status}] ${uri}\t${latency_human}\n",
 	})
 }

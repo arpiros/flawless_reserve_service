@@ -14,5 +14,6 @@ func SetRouter(e *echo.Echo) {
 }
 
 func SetMiddleWare(e *echo.Echo) {
+	e.Use(middleware.NewRecover())
 	e.Use(middleware.NewLogger())
 }
